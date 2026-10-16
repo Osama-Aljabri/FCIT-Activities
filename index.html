@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>FCIT Activities - Home</title>
+<!-- External CSS file -->
+<link href="style.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+<!-- ===== Header with project logo ===== -->
+<header class="site-header" id="top">
+<!-- Image map: clicking the logo goes to the About Us page -->
+<img alt="FCIT Student Activities logo" class="logo" height="120" src="images/fcit.jpg" usemap="#logomap" width="120"/>
+<map name="logomap">
+<area alt="About Us" coords="0,0,120,120" href="about.html" shape="rect"/>
+</map>
+<h1>FCIT Student Activities Portal</h1>
+<p>Faculty of Computing and Information Technology - King Abdulaziz University</p>
+</header>
+<!-- ===== Navigation menu ===== -->
+<nav class="main-nav">
+<a class="active" href="index.html">Home</a>
+<a href="login.html">Login</a>
+<a href="signup.html">Sign Up</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact Us</a></nav>
+<div class="container">
+<!-- ===== Hero section: fixed campus image + text layer ===== -->
+<section class="hero">
+<img alt="King Abdulaziz University campus" class="hero-image" src="images/campus.jpg"/>
+<div class="hero-text">
+<h2>Welcome to FCIT Student Activities Portal</h2>
+<p>Discover clubs, workshops and events at FCIT.</p>
+<a class="button" href="#schedule">View Activities</a>
+</div>
+</section>
+<!-- ===== Short project idea and benefit required on Home page ===== -->
+<article class="box">
+<h2>About the Portal</h2>
+<p>
+<strong>FCIT Student Activities Portal</strong> helps FCIT students find clubs,
+                workshops, events and activity schedules in one place.
+            </p>
+<p>It saves students time and helps them avoid missing activities.</p>
+<p><a href="#schedule">Go to Activity Schedule</a></p>
+</article>
+<!-- ===== Available clubs (ordered list with nested lists) ===== -->
+<section class="box">
+<h2>Available Clubs</h2>
+<ol>
+<li><strong>Coding Club</strong>
+<ul>
+<li>Coding workshops</li>
+<li>Programming challenges</li>
+</ul>
+</li>
+<li><strong>Cybersecurity Club</strong>
+<ul>
+<li>Security awareness sessions</li>
+<li>Network basics workshops</li>
+</ul>
+</li>
+<li><strong>AI Club</strong>
+<ul>
+<li>AI introduction sessions</li>
+<li>New technology talks</li>
+</ul>
+</li>
+</ol>
+<!-- Inline CSS example -->
+<p style="color: #1b5e20; font-weight: bold;">Want to join a club? Create an account from the Sign Up page.</p>
+</section>
+<!-- ===== Activity schedule table ===== -->
+<section class="box" id="schedule">
+<h2>Activity Schedule</h2>
+<table>
+<caption>Weekly FCIT activities</caption>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Day</th>
+<th>Time</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coding Workshop</td>
+<td>Sunday</td>
+<td>10:00 AM</td>
+<td>Lab 1</td>
+</tr>
+<tr>
+<td>Cybersecurity Workshop</td>
+<td>Tuesday</td>
+<td>12:00 PM</td>
+<td>Lab 2</td>
+</tr>
+<tr>
+<td>AI Introduction Session</td>
+<td>Thursday</td>
+<td>11:00 AM</td>
+<td>Room 204</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- Internal link back to the top of the page -->
+<p class="back-top"><a href="#top">Back to Top</a></p>
+</div>
+<!-- ===== Footer ===== -->
+<footer class="site-footer"><p><strong>FCIT Student Activities Portal</strong></p><p>Developed by Osama Al-Jabri and Ahmed Al-Atabi.</p></footer>
+</body>
+</html>

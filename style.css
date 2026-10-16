@@ -1,0 +1,260 @@
+/* =========================================
+   FCIT Student Activities Portal - style.css
+   External CSS file used by all pages
+   ========================================= */
+
+/* ----- General page style ----- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f2f2f2;   /* light gray page background */
+    color: #333333;
+}
+
+h2 {
+    color: #1b5e20;              /* dark green headings */
+}
+
+h3 {
+    color: #2e7d32;              /* green sub-headings */
+}
+
+a {
+    color: #2e7d32;
+}
+
+a:hover {
+    color: #1b5e20;
+}
+
+/* ----- Header ----- */
+.site-header {
+    background-color: #1b5e20;   /* dark green */
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.site-header h1 {
+    margin: 8px 0 5px 0;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.site-header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.logo {
+    border: 3px solid white;
+    border-radius: 12px;
+}
+
+/* ----- Navigation menu ----- */
+.main-nav {
+    background-color: #2e7d32;   /* green */
+    text-align: center;
+    padding: 12px 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+}
+
+/* :hover changes the link background when the mouse is over it */
+.main-nav a:hover {
+    background-color: #1b5e20;
+    color: white;
+}
+
+/* The link of the current page */
+.main-nav a.active {
+    background-color: #1b5e20;
+}
+
+/* ----- Page content area ----- */
+.container {
+    width: 85%;
+    margin: 20px auto;
+}
+
+/* Reusable white content box */
+.box {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px #bbbbbb;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* ----- Buttons (reusable class) ----- */
+.button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #1b5e20;
+    color: white;
+}
+
+.gray-button {
+    background-color: #757575;
+}
+
+.gray-button:hover {
+    background-color: #555555;
+}
+
+/* ----- Hero section (uses position and z-index) ----- */
+.hero {
+    position: relative;          /* the text box is placed inside this area */
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;                  /* image is the bottom layer */
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.hero-text {
+    position: absolute;          /* placed on top of the image */
+    z-index: 2;                  /* text box is the top layer */
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);   /* half transparent black */
+    border-radius: 8px;
+}
+
+.hero-text h2 {
+    color: white;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+/* ----- Tables ----- */
+table {
+    width: 100%;
+}
+
+caption {
+    font-weight: bold;
+    padding: 8px;
+    color: #555555;
+}
+
+th {
+    background-color: #2e7d32;   /* green table header */
+    color: white;                /* white header text */
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #cccccc;   /* thin borders */
+    padding: 10px;
+}
+
+/* ----- Forms ----- */
+.form-box {
+    width: 380px;
+    margin: 30px auto;
+}
+
+.wide-box {
+    width: 480px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.label-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Reusable class for text boxes, select and textarea */
+.field {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* :focus changes the border when the user clicks inside the field */
+.field:focus {
+    border: 2px solid #2e7d32;
+}
+
+.hint {
+    height: 20px;                /* fixed height so the buttons do not move */
+    color: #2e7d32;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* ----- Other small classes ----- */
+.rounded-image {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.back-top {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* ----- Contact Us ----- */
+.contact-section {
+    width: 85%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.contact-section p {
+    margin: 8px 0;
+}
+
+/* ----- Footer ----- */
+.site-footer {
+    background-color: #212121;   /* dark footer */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.site-footer p {
+    margin: 5px;
+}
