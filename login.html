@@ -6,6 +6,7 @@
 <title>FCIT Activities - Login</title>
 <link href="style.css" rel="stylesheet"/>
 
+<script src="script.js"></script>
 </head>
 <body>
 <!-- ===== Header with project logo ===== -->
@@ -30,7 +31,7 @@
 <section class="box form-box">
 <h2>Login</h2>
 <!-- When the form is valid, it goes to the Home page -->
-<form action="index.html" method="get">
+<form action="index.html" method="get" onsubmit="return checkLogin()">
 <label for="username">Email / Username</label><br/>
 <input class="field" id="username" name="username" type="text"/><br/>
 <label for="password">Password</label><br/>
