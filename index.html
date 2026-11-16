@@ -8,6 +8,7 @@
 <link href="style.css" rel="stylesheet"/>
 
 
+<script src="script.js"></script>
 </head>
 <body>
 <!-- ===== Header with project logo ===== -->
@@ -50,6 +51,13 @@
 <!-- ===== Available clubs (ordered list with nested lists) ===== -->
 <section class="box">
 <h2>Available Clubs</h2>
+<p>Choose a club to see its activities:</p>
+<button class="button" type="button" onclick="showClub(1)">Coding Club</button>
+<button class="button" type="button" onclick="showClub(2)">Cybersecurity Club</button>
+<button class="button" type="button" onclick="showClub(3)">AI Club</button>
+<p id="clubMessage">Click a club button above.</p>
+<button class="button" type="button" onclick="countClubs()">Count Clubs</button>
+<p id="clubCount"></p>
 <ol>
 <li><strong>Coding Club</strong>
 <ul>
@@ -76,6 +84,9 @@
 <!-- ===== Activity schedule table ===== -->
 <section class="box" id="schedule">
 <h2>Activity Schedule</h2>
+<button class="button" type="button" onclick="highlightSchedule()">Highlight Schedule</button>
+<button class="button gray-button" type="button" onclick="resetSchedule()">Reset Highlight</button>
+<p id="scheduleMessage"></p>
 <table>
 <caption>Weekly FCIT activities</caption>
 <thead>
@@ -107,6 +118,13 @@
 </tr>
 </tbody>
 </table>
+</section>
+<section class="box">
+<h2>Dynamic Picture</h2>
+<p id="pictureMessage">King Abdulaziz University campus</p>
+<img id="dynamicPicture" class="rounded-image" src="images/campus.jpg" alt="Campus or FCIT logo" width="260" height="160" />
+<p><button class="button" type="button" onclick="changePicture()">Show FCIT Logo</button>
+<button class="button gray-button" type="button" onclick="originalPicture()">Show Campus</button></p>
 </section>
 <!-- Internal link back to the top of the page -->
 <p class="back-top"><a href="#top">Back to Top</a></p>
